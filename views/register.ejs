@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+<div class="w-full h-screen bg-zinc-100 flex items-center justify-center">
+    <div class="w-96 h-[50vh] bg-zinc-100 px-4 py-5 rounded-md">
+        <h1 class="text-4xl text-center tracking-tighter captilize font-semibold text-zinc-700 leading-none"> Welcome to pintrest.</h1>
+        <form action="/register" method="post">
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" name="username" 
+            placeholder="name" type="text">
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" name="fullname" 
+            placeholder="full name" type="text">
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" name="contact" 
+            placeholder="contact" type="number">
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" name="email" 
+            placeholder="email" type="text">
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" name="password"
+             placeholder="password" type="password" >
+            <input class="border-2 rounded-md block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full" 
+            type="submit" value="login" >
+        <button type="submit" value="Create a new account"></button>
+        </form>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>
